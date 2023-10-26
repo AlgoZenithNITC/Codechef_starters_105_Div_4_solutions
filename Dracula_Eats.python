@@ -1,0 +1,12 @@
+def func():
+    n = int(input())
+    ans = 0
+    if (n - 1) % 7 == 0:
+        ans = (n - 1) // 7
+    else:
+        ans = (n - 1) // 7 + 1
+    print(ans)
+
+t = int(input())
+for i in range(t):
+    func()
