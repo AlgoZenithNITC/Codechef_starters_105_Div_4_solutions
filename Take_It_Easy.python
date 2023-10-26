@@ -1,0 +1,22 @@
+def func():
+    n = int(input())
+    v = list(map(int, input().split()))
+    sum = 0
+    for i in v:
+        sum += i
+    b = True
+    if sum % n != 0:
+        b = False
+        print("No")
+    if b:
+        f = sum // n
+        for i in range(n):
+            if (abs(f - v[i])) % 2 != 0:
+                print("No")
+                break
+        else:
+            print("Yes")
+
+t = int(input())
+for i in range(t):
+    func()
